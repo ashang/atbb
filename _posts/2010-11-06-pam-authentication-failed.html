@@ -1,0 +1,32 @@
+---
+layout: post
+title: PAM authentication failed
+date: 2010-11-06 17:13:18.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1412780817;}
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<h1>Error for userdel/user/add/groupadd/groupdel: </h1>
+<h1>PAM authentication failed</h1>
+<pre>Solution: Add pam file.
+
+e.g. for userdel:
+
+add a file /etc/pam.d/userdel
+
+</pre>
+<p>auth	sufficient	pam_rootok.so<br />
+auth	required	pam_unix.so</p>
+<p>account	required	pam_unix.so</p>
+<p>session	required	pam_unix.so</p>
+<p>password required	pam_permit.so</p>

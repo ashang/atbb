@@ -1,0 +1,28 @@
+---
+layout: post
+title: busybox modprobe ip_tables
+date: 2010-10-09 09:31:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_blog: aaronshang.blogspot.com
+  blogger_author: ashang
+  blogger_5bb2c9d46ab12c7e5ecee20eaa8bbd68_permalink: '2599688433241380425'
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p>no matter whether the modules exist or not, busybox will put module info into this file:<br />/lib/modules/`uname -r`/<a href="http://modules.dep.bb">modules.dep.bb</a></p>
+<p>the file will not be made empty even the modules removed:<br /> # modprobe -v -r ip_tables</p>
+<p># more <a href="http://modules.dep.bb">modules.dep.bb</a> <br />kernel/net/ipv4/netfilter/ip_tables.ko symbol:ipt_unregister_table symbol:ipt_register_table symbol:ipt_do_table symbol:ipt_do_table symbol:ipt_unregister_table symbol:ipt_register_table</p>
+<p>kernel/net/ipv4/netfilter/iptable_filter.ko<br />ip_tables</p>
+<p>The modules should be put into the right place, such as:<br />/lib/modules/`uname -r`/kernel/net/ipv4/netfilter</p>
+<p>
+<pre>iptables tries to load ip_tables even though it is statically compiled in the kernel</pre>
+<p></p>

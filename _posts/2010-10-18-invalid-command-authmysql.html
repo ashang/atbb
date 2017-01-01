@@ -1,0 +1,25 @@
+---
+layout: post
+title: Invalid command 'AuthMYSQL'
+date: 2010-10-18 05:29:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_blog: aaronshang.blogspot.com
+  blogger_author: ashang
+  blogger_5bb2c9d46ab12c7e5ecee20eaa8bbd68_permalink: '6321000185421551005'
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p>$ sudo /etc/init.d/apache2 restart<br />Syntax error on line 16 of /etc/apache2/conf.d/awstats.conf:<br />Invalid command &#039;AuthMYSQL&#039;, perhaps misspelled or defined by a module not included in the server configuration<br /> Action &#039;configtest&#039; failed.<br />The Apache error log may have more information.<br />   ...fail!</p>
+<p>$ sudo apt-get install libapache2-mod-auth-mysql</p>
+<p>$ sudo a2enmod auth_mysql<br />Enabling module auth_mysql.<br /> Run &#039;/etc/init.d/apache2 restart&#039; to activate new configuration!</p>
+<p>$ sudo /etc/init.d/apache2 restart<br /> * Restarting web server apache2                                                                                                                        [ OK ]</p>
+<p></p>

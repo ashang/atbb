@@ -1,0 +1,24 @@
+---
+layout: post
+title: Write failed is SSH Timeout
+date: 2010-10-08 16:06:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_8a1e6a99d0c87917b8bd0714e7958b89_permalink: '9038067049119047556'
+  blogger_author: Aaron Shang
+  blogger_blog: ashang.blogspot.com
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p><strong></strong><span> </span><strong>SSH session Timeout and break with this:<br />Write failed: Broken pipe?</strong></p>
+<p>to make it better, try tune client side option ServerAliveInterval to a small value.</p>
+<p>~/.ssh/ssh_config:<br /> ServerAliveInterval 30</p>
+<div class="blogger-post-footer"><img width="1" height="1" src="{{ site.baseurl }}/assets/" alt="" /></div>

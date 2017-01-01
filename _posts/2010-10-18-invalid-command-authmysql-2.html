@@ -1,0 +1,26 @@
+---
+layout: post
+title: Invalid command 'AuthMYSQL'
+date: 2010-10-18 13:29:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_blog: ashang.blogspot.com
+  blogger_author: Aaron Shang
+  blogger_8a1e6a99d0c87917b8bd0714e7958b89_permalink: '506359167624230476'
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p>$ sudo /etc/init.d/apache2 restart<br />Syntax error on line 16 of /etc/apache2/conf.d/awstats.conf:<br />Invalid command &#039;AuthMYSQL&#039;, perhaps misspelled or defined by a module not included in the server configuration<br /> Action &#039;configtest&#039; failed.<br />The Apache error log may have more information.<br />   ...fail!</p>
+<p>$ sudo apt-get install libapache2-mod-auth-mysql</p>
+<p>$ sudo a2enmod auth_mysql<br />Enabling module auth_mysql.<br /> Run &#039;/etc/init.d/apache2 restart&#039; to activate new configuration!</p>
+<p>$ sudo /etc/init.d/apache2 restart<br /> * Restarting web server apache2                                                                                                                        [ OK ]</p>
+<p> 
+<div class="blogger-post-footer"><img width="1" height="1" src="{{ site.baseurl }}/assets/" alt="" /></div>

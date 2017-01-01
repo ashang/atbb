@@ -1,0 +1,22 @@
+---
+layout: post
+title: TAB grep
+date: 2009-04-27 17:19:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_8a1e6a99d0c87917b8bd0714e7958b89_permalink: '5562498180068634864'
+  blogger_author: Aaron Shang
+  blogger_blog: ashang.blogspot.com
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<pre>$ grep  &#039;&lt;ctrl-v&gt;&lt;tab&gt;&#039; your_file<br /><br />remember, vim would expand the tab to spaces we input, so the grep will fail us.<br /><br />$ grep expandtab ~/.vimrc<br />&quot;set noexpandtab<br /><br />in vim, <br /> if the character is a tab, the cursor would stop once; <br />if they are spaces, the cursor will stop for a &quot;tabstop&quot; times.<br /><br />$ grep tabstop .vimrc <br />&quot;set tabstop=4<br /><br />with hexedit, or hexdump, or any hex editor, <br /> we can see the TAB is ascii 09, <br />while we know space is ascii 20.<br /></pre>
+<div class="blogger-post-footer"><img width="1" height="1" src="{{ site.baseurl }}/assets/" alt="" /></div>

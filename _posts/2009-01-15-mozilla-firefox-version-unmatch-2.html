@@ -1,0 +1,26 @@
+---
+layout: post
+title: mozilla firefox version unmatch
+date: 2009-01-15 21:55:00.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  blogger_8a1e6a99d0c87917b8bd0714e7958b89_permalink: '3177061807051472276'
+  blogger_blog: ashang.blogspot.com
+  blogger_author: Aaron Shang
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p>errors when launching firefox:</p>
+<p>$ firefox<br />Error: Platform version &#039;1.9&#039; is not compatible with<br />minVersion &gt;= 1.9.0.1<br />maxVersion &lt;= 1.9.0.*</p>
+<p>$ sudo vi /usr/lib/firefox-3.0.4/application.ini </p>
+<p>find these lines:<br />[Gecko]<br />MinVersion=1.9.0.1<br />MaxVersion=1.9.0.*</p>
+<p>modify the version range, then It works with this dirty trick.
+<div class="blogger-post-footer"><img width="1" height="1" src="{{ site.baseurl }}/assets/" alt="" /></div>

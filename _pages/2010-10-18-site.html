@@ -1,0 +1,52 @@
+---
+layout: page
+title: site
+date: 2010-10-18 07:48:03.000000000 +08:00
+type: page
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _wp_page_template: default
+  _edit_last: '17109838'
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p><strong>Notes on starting wordpress site</strong></p>
+<ul>
+<li>Get WordPress from: <a title="http://wordpress.org/latest.tar.gz" href="http://wordpress.org/latest.tar.gz" target="_blank">http://wordpress.org/latest.tar.gz</a> and explode it to<strong> your_target_install_path</strong></li>
+</ul>
+<ul>
+<li>Create database in MySQL:</li>
+</ul>
+<blockquote>
+<ul>
+<li>$ mysql -u root -p</li>
+<li>mysql&gt; create database database_name;</li>
+<li>mysql&gt; grant all on database_name.* to database_user@localhost identified by 'password_for_this_user';</li>
+<li>mysql&gt; flush privileges;</li>
+<li>mysql&gt; exit</li>
+</ul>
+</blockquote>
+<ul>
+<li>$EDITOR wp-config.php according to above MySQL operations.</li>
+</ul>
+<ul>
+</ul>
+<ul>
+<li>Add to apache conf</li>
+</ul>
+<blockquote><p>Alias /weblog/ "/<strong>your_target_install_path</strong>/"</p>
+<address>&lt;Directory /your_target_install_path/&gt;</address>
+<blockquote><p>DirectoryIndex index.php<br />
+AllowOverride FileInfo Options</p></blockquote>
+<address>&lt;/Directory&gt;</address>
+</blockquote>
+<ul>
+<li>Done. Access URL: <a title="http://localhost/weblog" href="http://localhost/weblog" target="_blank">http://localhost/weblog</a></li>
+</ul>

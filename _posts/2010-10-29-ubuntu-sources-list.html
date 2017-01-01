@@ -1,0 +1,94 @@
+---
+layout: post
+title: ubuntu sources.list
+date: 2010-10-29 10:28:29.000000000 +08:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- sources.list
+- ubuntu
+meta:
+  _edit_last: '1'
+  _wp_old_slug: ''
+author:
+  login: aaronshang
+  email: aaronshang@gmail.com
+  display_name: Aaron
+  first_name: ''
+  last_name: ''
+---
+<p># /etc/apt/sources.list</p>
+<p>deb http://mirrors.163.com/ubuntu-cn/shutter/ppa/ubuntu/ maverick main</p>
+<p>deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse<br />
+deb http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse<br />
+deb http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+deb http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse</p>
+<p>deb-src http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse<br />
+deb-src http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse<br />
+deb-src http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+deb-src http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse</p>
+<p>deb http://mirror.bjtu.edu.cn/ubuntu/ maverick main restricted universe multiverse<br />
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-updates main restricted universe multiverse<br />
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-security main restricted universe multiverse</p>
+<p>#deb http://ftp.sjtu.edu.cn/ubuntu maverick main universe multiverse restricted<br />
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-proposed main multiverse restricted universe<br />
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-security main multiverse restricted universe<br />
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-updates main multiverse restricted universe</p>
+<p># wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -<br />
+#deb http://archive.getdeb.net/ubuntu maverick-getdeb apps<br />
+#deb http://archive.getdeb.net/ubuntu maverick-getdeb games</p>
+<p>deb http://archive.canonical.com/ maverick partner<br />
+deb http://archive.canonical.com/ubuntu/ maverick partner<br />
+deb http://archive.canonical.com/ maverick-updates partner<br />
+deb http://archive.canonical.com/ maverick-proposed partner<br />
+deb http://archive.canonical.com/ maverick-security partner</p>
+<p>#deb http://archive.ubuntu.com/ubuntu/ maverick main restricted universe multiverse<br />
+#deb http://archive.ubuntu.com/ubuntu/ maverick-updates main restricted universe multiverse<br />
+#deb http://archive.ubuntu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+#deb http://security.ubuntu.com/ubuntu/ maverick-security main restricted universe multiverse</p>
+<p>#deb-src http://archive.ubuntu.com/ubuntu/ maverick-updates main universe multiverse restricted<br />
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick main universe multiverse restricted<br />
+#deb-src http://security.ubuntu.com/ubuntu maverick-security main universe multiverse restricted<br />
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick-proposed main universe multiverse restricted<br />
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick-backports main restricted universe multiverse</p>
+<p># Google software repository http://www.google.com/linuxrepositories/apt.html<br />
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -<br />
+# or (gpg --keyserver subkeys.pgp.net --recv A040830F7FAC5991 &amp;&amp; gpg --export --armor A040830F7FAC5991 | sudo apt-key add - )</p>
+<p># Google software repository<br />
+#deb http://dl.google.com/linux/deb/ testing non-free</p>
+<p>#$ gpg --keyserver keyserver.ubuntu.com --recv-key 428D7C01<br />
+#gpg: requesting key 428D7C01 from hkp server keyserver.ubuntu.com<br />
+#gpg: key 428D7C01: public key "Ubuntu Debug Symbol Archive Automatic Signing Key " imported<br />
+#gpg: no ultimately trusted keys found<br />
+#gpg: Total number processed: 1<br />
+#gpg:               imported: 1<br />
+#$ gpg --check-sigs 428D7C01<br />
+#pub 1024D/428D7C01 2008-09-02<br />
+#uid Ubuntu Debug Symbol Archive Automatic Signing Key<br />
+#sig!3        428D7C01 2008-09-02  Ubuntu Debug Symbol Archive Automatic Signing Key<br />
+#sub   2048g/A2C2A7A5 2008-09-02<br />
+#sig!         428D7C01 2008-09-02  Ubuntu Debug Symbol Archive Automatic Signing Key<br />
+#<br />
+#1 signature not checked due to a missing key<br />
+#<br />
+#$ gpg -o - --export 428D7C01 | sudo apt-key add -</p>
+<p># sudo apt-key add key.gpg</p>
+<p># wget -q http://packages.medibuntu.org/medibuntu-key.gpg -O- | sudo apt-key add -<br />
+#deb http://packages.medibuntu.org/ maverick free non-free<br />
+#deb http://packages.medibuntu.org/ maverick-staging non-free free</p>
+<p>#deb http://mirrors.sohu.com/ubuntu/ maverick main restricted universe multiverse<br />
+#deb http://mirrors.sohu.com/ubuntu/ maverick-security main restricted universe multiverse<br />
+#deb http://mirrors.sohu.com/ubuntu/ maverick-updates main restricted universe multiverse<br />
+#deb http://mirrors.sohu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+#deb http://mirrors.sohu.com/ubuntu/ maverick-backports main restricted universe multiverse<br />
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick main restricted universe multiverse<br />
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-security main restricted universe multiverse<br />
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-updates main restricted universe multiverse<br />
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br />
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-backports main restricted universe multiverse</p>
+<p>deb http://ppa.launchpad.net/puredyne-team/ppa/ubuntu maverick main<br />
+deb http://packages.medibuntu.org/ maverick free non-free<br />
+deb http://akirad.cinelerra.org akirad-maverick main</p>
