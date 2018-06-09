@@ -12,12 +12,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #title: Aaron Shang Notes
-email: as@ashang.org
+email: hi@ashang.org
   #For a moment, nothing happened. Then, after a second or so, nothing continued to happen.
 description: > # this means to ignore newlines until "baseurl:"
   For a moment, nothing happened.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ashang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://ashang.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ashang
 
 # Build settings
