@@ -23,8 +23,20 @@ github_username:  ashang
 # Build settings
 markdown: kramdown
 theme: minima
+
+permalink: /:year/:month/:title
+
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
+ 
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
