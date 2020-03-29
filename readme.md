@@ -4,6 +4,19 @@ title: About
 permalink: /about/
 ---
 
+https://www.shuxuele.com/decimals-menu.html
+
+https://hairuo.blogspot.com
+
+https://www.youtube.com/watch?v=qWeE2tnveaU
+
+https://www.shuxuele.com/place-value.html
+
+https://www.shuxuele.com/decimals.html
+
+
+
+
 glibc `__nss_hostname_digits_dots()` 存在一个缓冲区溢出的漏洞，可以经过 `gethostbyname*()` 被本地或者远程触发，攻击者可以利用该漏洞执行指令，控制存在漏洞的系统。
 
 发现者以“幽灵”(GHOST)命名此漏洞。
