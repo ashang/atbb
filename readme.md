@@ -1,8 +1,6 @@
----
-layout: page
-title: About
-permalink: /about/
----
+https://webcamtoy.com/
+
+https://obsproject.com/wiki/install-instructions
 
 https://www.shuxuele.com/decimals-menu.html
 
