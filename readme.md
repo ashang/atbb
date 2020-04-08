@@ -1,4 +1,3 @@
-https://webcamtoy.com/
 
 https://obsproject.com/wiki/install-instructions
 
@@ -11,9 +10,6 @@ https://www.youtube.com/watch?v=qWeE2tnveaU
 https://www.shuxuele.com/place-value.html
 
 https://www.shuxuele.com/decimals.html
-
-
-
 
 glibc `__nss_hostname_digits_dots()` 存在一个缓冲区溢出的漏洞，可以经过 `gethostbyname*()` 被本地或者远程触发，攻击者可以利用该漏洞执行指令，控制存在漏洞的系统。
 
@@ -56,7 +52,7 @@ int main(void) {
 
   char name[sizeof(temp.buffer)];
   memset(name, '0', len);
-  name[len] = '\0';
+ name[len] = '\0';
 
   retval = gethostbyname_r(name, &resbuf, temp.buffer, sizeof(temp.buffer), &result, &herrno);
 
@@ -75,13 +71,7 @@ int main(void) {
 }
 ```
 
-
-
-
-
 https://webcamtoy.com/
-
-https://github.com/git-for-windows/git-for-windows.github.io
 
 https://www.eatthis.com/foods-that-make-you-congested/
 
@@ -94,4 +84,3 @@ http://www.opensourceshakespeare.org/
 https://www.msn.com/en-us/news/us/coronavirus-in-the-us-how-all-50-states-are-responding-–-and-why-nine-still-refuse-to-issue-stay-at-home-orders/ar-BB11VZm0?ocid=spartanntp
 
 https://www.msn.com/en-us/news/us/he-led-a-top-navy-ship-now-he-sits-in-quarantine-fired-and-infected/ar-BB12cuKx
-
